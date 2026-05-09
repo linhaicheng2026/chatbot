@@ -20,27 +20,37 @@
 ### 安装与运行
 
 1. **克隆仓库**
-    ```bash
+```bash
     git clone https://github.com/linhaicheng2026/chatbot.git
-    cd my-chatbot
+    cd chatbot
+```
 
 2. 安装依赖
-    ```bash
+```bash
     pip install -r requirements.txt
+```
  
 3. 启动应用
-    ```bash
+```bash
      streamlit run app.py
+```
+
+
 
 ### 项目结构
     my-chatbot/
-    ├── app.py # 主程序入口，聊天界面逻辑
-    ├── utils.py # 工具函数，如模型调用封装
+    ├── app.py           # 主程序入口，聊天界面逻辑
+    ├── utils.py         # 工具函数，如模型调用封装
     ├── requirements.txt # 项目依赖清单
-    ├── .gitignore # Git忽略规则
-    └── README.md # 项目说明文档
+    ├── .gitignore       # Git忽略规则
+    └── README.md        # 项目说明文档
+
+
 
 ### 学习笔记
-2026-05-08：完成 Streamlit 聊天界面的初步搭建，实现基本问答。
 
-2026-05-09：遇到 .gitignore 规则不生效的问题，最终排查是 Windows 下文件编码（BOM头）导致，已解决。
+| 日期 | 学习内容 | 遇到的问题 | 解决方法 |
+| :--- | :--- | :--- | :--- |
+| 2026-05-08 | 完成 Streamlit 聊天界面的初步搭建，实现基本问答 | 无 | — |
+| 2026-05-09 | 配置 `.gitignore` 忽略规则 | `.gitignore` 规则不生效 | Windows 下文件编码为带 BOM 头的 UTF-8，用记事本另存为 ANSI 编码后解决 |
+
